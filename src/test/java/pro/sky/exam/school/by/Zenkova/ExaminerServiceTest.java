@@ -7,6 +7,7 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 import pro.sky.exam.school.by.Zenkova.QuestionServiceImpl.ExaminerServiceImpl;
+import pro.sky.exam.school.by.Zenkova.QuestionServiceImpl.JavaQuestionService;
 import pro.sky.exam.school.by.Zenkova.Service.ExaminerService;
 import pro.sky.exam.school.by.Zenkova.Service.QuestionService;
 import pro.sky.exam.school.by.Zenkova.data.Question;

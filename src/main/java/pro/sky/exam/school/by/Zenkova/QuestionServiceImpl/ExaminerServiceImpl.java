@@ -23,9 +23,9 @@ public class ExaminerServiceImpl implements ExaminerService {
 
     @Override
     public Collection<Question> getQuestions(int amount) {
-//        if (amount > questionService.getAll().size()) {
-//            throw new LargeNumberOfQuestions("Запрошено большее количесво вопросов, чем есть в базе");
-//        }
+        if (amount > questionService.getAll().size()) {
+            throw new LargeNumberOfQuestions("Запрошено большее количесво вопросов, чем есть в базе");
+        }
         Set<Question> examine = new HashSet<>();
         while (examine.size() <= amount) {
             Question question = questionService.getRandomQuestion();
